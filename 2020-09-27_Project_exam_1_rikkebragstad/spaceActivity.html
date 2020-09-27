@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="spaceActivity.css">
+
+  <title>Space activity</title>
+</head>
+
+<body>
+  <nav>
+    <div id="burger-menu">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="burger-links">
+
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="about.html">
+          <li>SpaceX</li>
+        </a>
+        <a id="active" href="spaceActivity.html">
+          <li>Space activity</li>
+        </a>
+        <a href="goal.html">
+          <li>Goal</li>
+        </a>
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+        <a href="https://www.spacex.com/">
+          <li id="spaceXlink">Visit adult SpaceX</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="horizontal-link">
+      <a href="index.html"><b>Home</b></a>
+    </div>
+    <div class="horizontal-link">
+      <a href="about.html">SpaceX</a>
+    </div>
+    <div class="horizontal-link">
+      <a id="active" href="spaceActivity.html">Space activity</a>
+    </div>
+    <div class="horizontal-link">
+      <a href="goal.html">Goal</a>
+    </div>
+    <div class="horizontal-link">
+      <a href="contact.html">Contact us</a>
+    </div>
+
+    <a href="https://www.spacex.com/"><button id="visit-spaceX">Visit SpaceX</button></a>
+
+  </nav>
+
+  <main>
+
+    <div id="top-section">
+      <div id="paragraph">
+        <h2>Space activity</h2>
+        <p>For centuries, people dreamed about leaving Earth and travelling to other worlds. Then, in 1957, the Soviet Union made the first small step into space by launching a small satellite, called Sputnik. Early space activities were
+          dominated by the United States and the Soviet Union, today, countries such as China, India, South Korea, Israel and Brazil are developing their own space industries. </p>
+        <p>During the last 60 years, probes have been sent towards all of the planets in the Solar System, as well as many satellites, asteroids and comets. Spacecraft have landed on half a dozen worlds, while rovers have driven over the
+          surfaces of the Moon and Mars.</p>
+        <p>Since Yuri Gagarin paved the way in 1961, more than 500 people have flown in space. 20 people have travelled to the Moon and 12 of them have walked on the Moon. Space stations have been built, and astronauts have learned to live
+          and work in space for many months, or even years.</p>
+      </div>
+      <div class="picture"><img src="./pictures/theMoon.png" id="moon" alt="The moon"></div>
+    </div>
+    <article id="middle-section">
+      <div class="fact">
+
+        <h3 class="fact-heading">Did you know</h3>
+
+        <div id="astronaut-text"></div><img src="./pictures/funfact6.png" class="fact-pic" alt="Astronaut">
+
+      </div>
+
+      <div class="fact">
+        <h3 class="fact-heading">Did you know</h3>
+        <p>a theory says that when Earth was a young planet, it was struck by a giant object and this collision broke a piece of the Earth away to create the moon. This piece then began to orbit the Earth as a result of
+          its gravitational pull.</p><img src="./pictures/funfact2.png" class="fact-pic" alt="The moon">
+
+      </div>
+
+      <div class="fact">
+        <h3 class="fact-heading">Did you know</h3>
+        <p>The International Space Station (ISS), is the only space station currently orbiting earth. At this moment it is located at:</p>
+        <div id="latitude"></div>
+        <div id="longitude"></div>
+        <img src="./pictures/funfact4.png" class="fact-pic" alt="ISS">
+
+      </div>
+    </article>
+
+    <div id="planet-container">
+      <h3>Do you know the name of all the planets?</h3>
+      <img src="./pictures/jupiter.png" class="planet" alt="Jupiter">
+      <img src="./pictures/neptune.png" class="planet" alt="Neptune">
+      <img src="./pictures/mars.png" class="planet" alt="Mars">
+      <img src="./pictures/planet-earth.png" class="planet" alt="Earth">
+      <img src="./pictures/saturn.png" class="planet" alt="Saturn">
+      <img src="./pictures/uranus.png" class="planet" alt="Uranus">
+      <img src="./pictures/venus.png" class="planet" alt="Venus">
+      <img src="./pictures/mercury.png" class="planet" alt="Mercury">
+    </div>
+
+    <div id="launch-schedule">
+      <div id="right-launch">
+        <h3 id="launch">Latest launches:</h3>
+        <div id="latest">
+
+        </div>
+      </div>
+
+      <div id="left-launch">
+        <h3 id="launch">Upcomming launches:</h3>
+        <div id="next">
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <img src="./pictures/facebook-icon.png" class="footer-icons" alt="Facebook icon">
+    <img src="./pictures/instagram-icon.png" class="footer-icons" alt="Instagram icon">
+    <img src="./pictures/twitter-icon.png" class="footer-icons" alt="Twitter icon">
+
+  </footer>
+
+  <script src="js/latestLaunches.js"></script>
+  <script src="js/nextLaunches.js"></script>
+  <script src="js/astronautsInSpace.js"></script>
+  <script src="js/issLocation.js"></script>
+</body>
+
+</html>

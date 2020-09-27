@@ -1,0 +1,92 @@
+/*----------------------- HEADER -----------------------------*/
+header {
+  height: 300px;
+  background-image: url("./pictures/goal.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #1f1f1f;
+  position: fixed;
+  z-index: 1;
+}
+
+/*----------------------- NAV -----------------------------*/
+nav {
+  z-index: 4;
+}
+
+/*----------------------- MAIN -----------------------------*/
+.bottom-paragraph {
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+.bottom-section {
+  height: 300px;
+  padding-top: 100px;
+  width: 100%;
+  background-color: #1f1f1f;
+  top: 0;
+  position: relative;
+  z-index: 2;
+  text-align: justify;
+}
+
+.white-box {
+  width: 40%;
+  margin: auto;
+  height: auto;
+  background-color: #eaeaea;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  padding: 40px;
+  position: relative;
+  z-index: 3;
+  text-align: justify;
+}
+
+/*----------------------- BUTTON -----------------------------*/
+button#message {
+  height: 50px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 70px;
+  background-color: #1f1f1f;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+button#message:hover {
+  border: 1px solid #ec4173;
+  cursor: pointer;
+}
+
+/*----------------------- MEDIA QUERIES -----------------------------*/
+@media only screen and (max-width: 900px) {
+/*---------------- DESKTOP -----------------*/
+  .white-box {
+    width: 60%;
+  }
+
+  .bottom-paragraph {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+/*---------------- TABLET/PHONE -----------------*/
+  header {
+    margin-top: 45px;
+    height: 90px;
+    width: 80%;
+    padding: 10%;
+  }
+
+  .white-box {
+    width: 88%;
+    margin-bottom: 0;
+    margin-top: 230px;
+  }
+}

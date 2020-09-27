@@ -1,0 +1,309 @@
+/*----------------------- FONTFACE -----------------------------*/
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(./fonts/SourceSansPro-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url(./fonts/dryBrush.ttf);
+}
+
+/*----------------------- TYPOGRAPHY -----------------------------*/
+h1 {
+  font-size: 100px;
+  margin: 0px 20px;
+  color: white;
+  font-family: myThirdFont;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  font-family: myFirstFont;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: myFirstFont;
+  color: white;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: myFirstFont;
+  color: dimgray;
+}
+
+p {
+  font-size: 17px;
+  font-family: mySecondFont;
+  color: white;
+}
+
+p#dark {
+  font-size: 17px;
+  font-family: mySecondFont;
+  color: black;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+a {
+  font-size: 14px;
+  font-family: mySecondFont;
+  text-decoration: none;
+  color: white;
+}
+
+a#active {
+  font-family: myFirstFont;
+}
+
+a:hover {
+  color: #ec4173;
+}
+
+p#details {
+  font-size: 17px;
+  font-family: mySecondFont;
+  color: dimgray;
+}
+
+/*----------------------- BODY -----------------------------*/
+body {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+main {
+  width: 100%;
+}
+
+#visit-spaceX {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+  height: 80px;
+  width: 80px;
+  font-family: myFirstFont;
+  font-size: 16px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+#visit-spaceX:hover {
+  border: 1px solid #ec4173;
+  cursor: pointer;
+}
+
+/*----------------------- HEADER -----------------------------*/
+header {
+  width: 100%;
+  margin: auto;
+  padding-top: 150px;
+  align-content: center;
+  text-align: center;
+  display: block;
+  top: 0;
+}
+
+/*----------------------- NAV -----------------------------*/
+nav {
+  height: 50px;
+  background: rgba(0, 0, 0, .9);
+  position: fixed;
+  margin-top: 0px;
+  width: 100%;
+  top: 0;
+}
+
+.horizontal-link {
+  float: left;
+  padding: 15px 30px;
+}
+
+/*----------------------- BURGERMENU -----------------------------*/
+#burger-menu {
+  display: none;
+  position: relative;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+}
+
+#burger-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+#burger-menu a:hover {
+  color: #ec4173;
+}
+
+#burger-menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -3px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#burger-menu span {
+  display: block;
+  width: 33px;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 1px;
+}
+
+#burger-menu input:checked~span {
+  z-index: 1;  
+}
+
+#burger-menu input:checked~ul {
+  transform: none;
+}
+
+#burger-links {
+  position: absolute;
+  width: 200px;
+  height: 450px;
+  margin: -300px 0 0 -40px;
+  padding: 320px 20px 70px 90px;
+  background: rgba(0, 0, 0, 0.9);
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+/*----------------------- SPACEX LINK -----------------------------*/
+#spaceXlink {
+  color: skyblue;
+  font-family: myFirstFont;
+  padding-top: 20px;
+}
+
+#spaceXlink:hover {
+  color: cadetblue;
+}
+
+/*-------------------------- FOOTER -------------------------------*/
+footer {
+  height: 100px;
+  padding-top: 50px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-top: solid 1px #535353;
+}
+
+.footer-icons {
+  width: 40px;
+  margin: 10px;
+  transition: all .1s ease-in-out;
+  margin-top: 15px;
+}
+
+.footer-icons:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+/*----------------------- MEDIA QUERIES -----------------------------*/
+@media only screen and (max-width: 900px) {
+
+  /*----------------- DESKTOP -------------------*/
+  footer {
+    height: 80px;
+    padding-top: 20px;
+  }
+
+  #visit-spaceX {
+    display: none;
+  }
+
+  #burger-menu {
+    display: block;
+  }
+
+  .horizontal-link {
+    display: none;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  p#dark {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  /*----------------- TABLET -------------------*/
+  #burger-menu {
+    top: 12px;
+  }
+
+  #burger-menu:span {
+    width: 30px;
+    height: 5px
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p#details {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /*----------------- PHONE -------------------*/
+  #burger-links {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  p#menu-text {
+    display: none;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
