@@ -1,7 +1,9 @@
   /* ---------------------- BODY ---------------------------------------- */
-  body {
+   body {
     background-image: url("./pictures/background4.png");
     background-repeat: no-repeat;
+      background-color: #29233f;
+      background-size: 110%;
   }
 
   /* ---------------------- MAIN ---------------------------------------- */
